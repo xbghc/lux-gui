@@ -1,0 +1,21 @@
+{
+  "name": "lux-gui",
+  "version": "1.0.0",
+  "description": "A Tauri-based GUI for Lux video downloader",
+  "main": "index.js",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["lux", "video", "downloader", "tauri", "gui"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.6"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.9.1"
+  }
+}
