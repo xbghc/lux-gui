@@ -41,6 +41,20 @@ scoop install lux
 - Node.js (v16 or higher)
 - Rust (latest stable)
 - Lux (installed and available in PATH)
+- System dependencies for Tauri (Linux only):
+  ```bash
+  # On Ubuntu/Debian
+  sudo apt update
+  sudo apt install libwebkit2gtk-4.0-dev \
+    build-essential \
+    curl \
+    wget \
+    file \
+    libssl-dev \
+    libgtk-3-dev \
+    libayatana-appindicator3-dev \
+    librsvg2-dev
+  ```
 
 ### Setup
 

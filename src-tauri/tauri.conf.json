@@ -2,19 +2,19 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "lux-gui",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.lux.gui",
   "build": {
     "frontendDist": "dist",
-    "devUrl": "http://localhost:5173",
-    "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build"
+    "devUrl": "http://localhost:5173"
   },
   "app": {
     "windows": [
       {
         "title": "Lux Downloader",
-        "width": 800,
-        "height": 600,
+        "width": 900,
+        "height": 700,
+        "minWidth": 600,
+        "minHeight": 500,
         "resizable": true,
         "fullscreen": false
       }
