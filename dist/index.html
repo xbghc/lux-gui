@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lux Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Lux Video Downloader</h1>
+            <p class="subtitle">Download videos from popular platforms</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="url-input">Video URL:</label>
+                <input 
+                    type="text" 
+                    id="url-input" 
+                    placeholder="Enter video URL (YouTube, Bilibili, etc.)"
+                    autocomplete="off"
+                />
+            </div>
+
+            <div class="format-section">
+                <label for="format-select">Format:</label>
+                <select id="format-select">
+                    <option value="">Auto (Best Quality)</option>
+                    <option value="mp4">MP4</option>
+                    <option value="flv">FLV</option>
+                    <option value="mp3">MP3 (Audio Only)</option>
+                </select>
+            </div>
+
+            <div class="options-section">
+                <label>
+                    <input type="checkbox" id="info-only" />
+                    <span>Show info only (don't download)</span>
+                </label>
+            </div>
+
+            <div class="button-section">
+                <button id="download-btn" class="btn-primary">
+                    <span class="btn-icon">⬇️</span>
+                    <span class="btn-text">Download</span>
+                </button>
+                <button id="info-btn" class="btn-secondary">
+                    <span class="btn-icon">ℹ️</span>
+                    <span class="btn-text">Get Info</span>
+                </button>
+            </div>
+
+            <div id="output-section" class="output-section" style="display: none;">
+                <h3>Output:</h3>
+                <pre id="output-content"></pre>
+            </div>
+
+            <div id="progress-section" class="progress-section" style="display: none;">
+                <h3>Download Progress:</h3>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p id="progress-text" class="progress-text">Starting download...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://github.com/iawia002/lux" target="_blank">Lux</a> and Tauri</p>
+        </footer>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
